@@ -18,7 +18,7 @@ export function Layout({ children }: { children: React.ReactNode }) {
           {/* Logo (Center) */}
           <div className="w-2/4 flex justify-center">
             <Link href="/">
-              <a className="font-serif text-3xl md:text-4xl tracking-widest font-bold text-primary hover:text-primary/90 transition-colors uppercase">
+              <a className="font-serif text-3xl md:text-4xl tracking-widest font-bold text-heading hover:text-heading/90 transition-colors uppercase">
                 Svarnikaa
               </a>
             </Link>
@@ -49,7 +49,7 @@ export function Layout({ children }: { children: React.ReactNode }) {
         <div className="container mx-auto px-6">
           <div className="grid grid-cols-1 md:grid-cols-3 gap-12 text-center md:text-left mb-16">
             <div className="space-y-4">
-              <h4 className="font-serif text-xl text-primary tracking-widest">Contact</h4>
+              <h4 className="font-serif text-xl text-heading tracking-widest">Contact</h4>
               <p className="text-muted-foreground text-sm leading-relaxed">
                 +91 98765 43210<br/>
                 concierge@svarnikaa.com
@@ -57,7 +57,7 @@ export function Layout({ children }: { children: React.ReactNode }) {
             </div>
             
             <div className="space-y-4 flex flex-col items-center">
-              <h4 className="font-serif text-xl text-primary tracking-widest">Svarnikaa</h4>
+              <h4 className="font-serif text-xl text-heading tracking-widest">Svarnikaa</h4>
               <div className="flex gap-6 mt-2">
                 <a href="#" className="text-muted-foreground hover:text-primary transition-colors"><Instagram strokeWidth={1} size={20}/></a>
                 <a href="#" className="text-muted-foreground hover:text-primary transition-colors"><Facebook strokeWidth={1} size={20}/></a>
@@ -67,7 +67,7 @@ export function Layout({ children }: { children: React.ReactNode }) {
             </div>
 
             <div className="space-y-4 md:text-right">
-              <h4 className="font-serif text-xl text-primary tracking-widest">Legal</h4>
+              <h4 className="font-serif text-xl text-heading tracking-widest">Legal</h4>
               <div className="flex flex-col gap-2 text-sm text-muted-foreground">
                 <a href="#" className="hover:text-primary transition-colors">Privacy Policy</a>
                 <a href="#" className="hover:text-primary transition-colors">Terms of Service</a>

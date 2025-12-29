@@ -30,7 +30,7 @@ export function ProductCard({ product }: ProductCardProps) {
       </div>
 
       <div className="space-y-2 pt-2">
-        <h3 className="font-serif text-2xl text-primary tracking-wide group-hover:text-white transition-colors duration-300">
+        <h3 className="font-serif text-2xl text-heading tracking-wide group-hover:text-white transition-colors duration-300">
           {product.name}
         </h3>
         <p className="text-xs text-muted-foreground uppercase tracking-widest">

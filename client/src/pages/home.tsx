@@ -37,7 +37,7 @@ function ProductCarousel() {
       <div className="flex items-center justify-between">
         <div>
           <span className="text-primary text-xs uppercase tracking-[0.2em] block mb-2">— The Collection —</span>
-          <h2 className="font-serif text-4xl md:text-5xl text-primary">Available Stock</h2>
+          <h2 className="font-serif text-4xl md:text-5xl text-heading">Available Stock</h2>
         </div>
         <div className="flex gap-2">
           <button 
@@ -92,7 +92,7 @@ export default function Home() {
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 1, delay: 0.2 }}
           >
-            <h1 className="font-serif text-5xl md:text-7xl lg:text-8xl text-primary font-medium tracking-tight leading-none mb-4">
+            <h1 className="font-serif text-5xl md:text-7xl lg:text-8xl text-heading font-medium tracking-tight leading-none mb-4">
               Svarnikaa
             </h1>
             <p className="font-sans text-sm md:text-base tracking-[0.3em] uppercase text-foreground/80 font-light">
@@ -123,7 +123,7 @@ export default function Home() {
           className="max-w-2xl mx-auto space-y-6"
         >
           <span className="text-primary text-xs uppercase tracking-[0.2em] block mb-4">— The Collection —</span>
-          <h2 className="font-serif text-4xl md:text-5xl text-primary">
+          <h2 className="font-serif text-4xl md:text-5xl text-heading">
             Timeless Elegance
           </h2>
           <p className="text-muted-foreground font-light leading-relaxed">
@@ -144,17 +144,17 @@ export default function Home() {
         <div className="container mx-auto grid grid-cols-1 md:grid-cols-3 gap-12 text-center">
           <div className="flex flex-col items-center space-y-4 p-6 border border-white/5 hover:border-primary/20 transition-colors duration-500">
             <ShieldCheck className="text-primary w-8 h-8 mb-2" strokeWidth={1} />
-            <h3 className="font-serif text-xl text-primary tracking-wide">Hallmark Certified</h3>
+            <h3 className="font-serif text-xl text-heading tracking-wide">Hallmark Certified</h3>
             <p className="text-sm text-muted-foreground font-light">Guaranteed purity and authenticity in every grain of gold.</p>
           </div>
           <div className="flex flex-col items-center space-y-4 p-6 border border-white/5 hover:border-primary/20 transition-colors duration-500">
             <Leaf className="text-primary w-8 h-8 mb-2" strokeWidth={1} />
-            <h3 className="font-serif text-xl text-primary tracking-wide">Ethically Sourced</h3>
+            <h3 className="font-serif text-xl text-heading tracking-wide">Ethically Sourced</h3>
             <p className="text-sm text-muted-foreground font-light">Responsible mining and sustainable practices at our core.</p>
           </div>
           <div className="flex flex-col items-center space-y-4 p-6 border border-white/5 hover:border-primary/20 transition-colors duration-500">
             <Crown className="text-primary w-8 h-8 mb-2" strokeWidth={1} />
-            <h3 className="font-serif text-xl text-primary tracking-wide">Handcrafted Excellence</h3>
+            <h3 className="font-serif text-xl text-heading tracking-wide">Handcrafted Excellence</h3>
             <p className="text-sm text-muted-foreground font-light">Master artisans creating heirlooms for generations to come.</p>
           </div>
         </div>
@@ -179,7 +179,7 @@ export default function Home() {
           
           <div className="w-full md:w-1/2 px-6 md:px-0 text-center md:text-left space-y-8">
             <span className="text-primary text-xs uppercase tracking-[0.2em]">— Our Heritage</span>
-            <h2 className="font-serif text-4xl md:text-6xl text-primary leading-tight">
+            <h2 className="font-serif text-4xl md:text-6xl text-heading leading-tight">
               Where Tradition <br/> Meets Modernity
             </h2>
             <p className="text-muted-foreground font-light leading-loose max-w-lg">
