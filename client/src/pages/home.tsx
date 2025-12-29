@@ -2,7 +2,75 @@ import { Layout } from "@/components/layout";
 import { ProductCard } from "@/components/product-card";
 import { assets, products } from "@/lib/data";
 import { motion } from "framer-motion";
-import { ShieldCheck, Leaf, Crown } from "lucide-react";
+import { ShieldCheck, Leaf, Crown, ChevronLeft, ChevronRight } from "lucide-react";
+import { useRef, useState, useEffect } from "react";
+import useEmblaCarousel from "embla-carousel-react";
+
+function ProductCarousel() {
+  const [emblaRef, emblaApi] = useEmblaCarousel({ loop: true, align: "start" });
+  const [canScrollPrev, setCanScrollPrev] = useState(false);
+  const [canScrollNext, setCanScrollNext] = useState(true);
+
+  useEffect(() => {
+    if (!emblaApi) return;
+    
+    const onSelect = () => {
+      setCanScrollPrev(emblaApi.canScrollPrev());
+      setCanScrollNext(emblaApi.canScrollNext());
+    };
+    
+    emblaApi.on("select", onSelect);
+    onSelect();
+    
+    return () => {
+      emblaApi.off("select", onSelect);
+    };
+  }, [emblaApi]);
+
+  const scroll = (direction: "prev" | "next") => {
+    if (direction === "prev") emblaApi?.scrollPrev();
+    else emblaApi?.scrollNext();
+  };
+
+  return (
+    <div className="space-y-8">
+      <div className="flex items-center justify-between">
+        <div>
+          <span className="text-primary text-xs uppercase tracking-[0.2em] block mb-2">— The Collection —</span>
+          <h2 className="font-serif text-4xl md:text-5xl text-primary">Available Stock</h2>
+        </div>
+        <div className="flex gap-2">
+          <button 
+            onClick={() => scroll("prev")}
+            disabled={!canScrollPrev}
+            className="p-2 border border-primary/30 text-primary hover:bg-primary/10 disabled:opacity-30 disabled:cursor-not-allowed transition-all"
+            data-testid="carousel-prev"
+          >
+            <ChevronLeft size={20} />
+          </button>
+          <button 
+            onClick={() => scroll("next")}
+            disabled={!canScrollNext}
+            className="p-2 border border-primary/30 text-primary hover:bg-primary/10 disabled:opacity-30 disabled:cursor-not-allowed transition-all"
+            data-testid="carousel-next"
+          >
+            <ChevronRight size={20} />
+          </button>
+        </div>
+      </div>
+      
+      <div className="overflow-hidden" ref={emblaRef}>
+        <div className="flex gap-6">
+          {products.map((product) => (
+            <div key={product.id} className="flex-[0_0_100%] md:flex-[0_0_50%] lg:flex-[0_0_25%] min-w-0">
+              <ProductCard product={product} />
+            </div>
+          ))}
+        </div>
+      </div>
+    </div>
+  );
+}
 
 export default function Home() {
   return (
@@ -66,23 +134,9 @@ export default function Home() {
         </motion.div>
       </section>
 
-      {/* Product Grid */}
+      {/* Product Carousel */}
       <section className="py-12 px-6 container mx-auto">
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-x-8 gap-y-16">
-          {products.map((product) => (
-            <ProductCard key={product.id} product={product} />
-          ))}
-          {/* Repeat products to fill grid nicely for demo */}
-          {products.map((product) => (
-            <ProductCard key={`${product.id}-dup`} product={{...product, id: product.id + 100}} />
-          ))}
-        </div>
-        
-        <div className="text-center mt-24">
-          <button className="text-xs uppercase tracking-[0.2em] text-muted-foreground hover:text-primary transition-colors border-b border-transparent hover:border-primary pb-1">
-            View All Pieces
-          </button>
-        </div>
+        <ProductCarousel />
       </section>
 
       {/* Feature Highlights */}
