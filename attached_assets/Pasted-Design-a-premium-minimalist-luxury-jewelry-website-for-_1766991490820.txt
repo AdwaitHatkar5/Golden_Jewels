@@ -1,0 +1,118 @@
+Design a premium, minimalist luxury jewelry website for a brand named SVARNIKAA.
+
+The brand identity must feel elegant, timeless, and high-end, inspired by Indian heritage with a modern global luxury aesthetic.
+
+Color Palette:
+
+Primary background color: soft buff / warm beige
+
+Secondary background: pure white for breathing space
+
+Accent & content highlights: metallic gold (used only for headings, borders, icons, and key emphasis)
+
+Text color: deep charcoal or warm dark brown (never pure black)
+
+Typography:
+
+Brand name “SVARNIKAA” placed at the top center in elegant serif typography with subtle gold finish
+
+Headings: luxury serif font
+
+Body text: clean, minimal sans-serif
+
+Layout Style:
+
+Clean, spacious, editorial luxury layout
+
+No clutter, no heavy navigation
+
+High white space and balanced symmetry
+
+Premium fashion-magazine style composition
+
+Header:
+
+Center-aligned brand logo text “SVARNIKAA”
+
+Minimal right-side icons only (wishlist, enquiry, cart placeholder)
+
+No category menu
+
+Hero Section:
+
+Full-width hero image of premium gold jewelry on a soft neutral background
+
+Subtle warm lighting
+
+Tagline example: “Crafted in Gold. Curated with Grace.”
+
+Single primary CTA button: “View Collection” in gold accent
+
+Main Content Section – Available Stock:
+
+Display jewelry as a clean grid of product cards
+
+Each card includes:
+
+High-quality jewelry image
+
+Product name
+
+Minimal metadata (metal type or weight)
+
+“Enquire” button instead of Buy Now
+
+No categories, no filters, no prices
+
+Layout must feel like a curated collection, not an e-commerce catalog
+
+Feature Highlights Section:
+
+Three minimal feature blocks with gold line icons
+
+Text examples:
+
+Hallmark Certified
+
+Ethically Sourced
+
+Handcrafted Excellence
+
+White background with gold accents
+
+Editorial Brand Section:
+
+Large image + elegant text block
+
+Emotional brand statement emphasizing craftsmanship, elegance, and exclusivity
+
+Footer:
+
+Minimal and clean
+
+Brand name, contact info, social icons, and legal links
+
+No visual noise
+
+Important Functional Concept (Design-Aware):
+
+Website is inventory-driven, not category-driven
+
+Design should support future JSON/API-based content updates
+
+Product cards should appear modular and repeatable
+
+Overall Mood:
+
+Luxury
+
+Calm
+
+Trust-building
+
+Premium jewelry boutique feel
+
+Export-ready global brand aesthetic
+
+Avoid loud colors, avoid over-decoration, avoid trendy UI gimmicks.
+The design should feel timeless, elegant, and authoritative.
