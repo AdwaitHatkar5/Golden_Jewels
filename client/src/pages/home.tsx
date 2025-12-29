@@ -143,17 +143,17 @@ export default function Home() {
       <section className="py-32 px-6 bg-secondary/20 mt-24">
         <div className="container mx-auto grid grid-cols-1 md:grid-cols-3 gap-12 text-center">
           <div className="flex flex-col items-center space-y-4 p-6 border border-white/5 hover:border-primary/20 transition-colors duration-500">
-            <ShieldCheck className="text-primary w-8 h-8 mb-2" strokeWidth={1} />
+            <ShieldCheck className="text-heading w-8 h-8 mb-2" strokeWidth={1} />
             <h3 className="font-serif text-xl text-heading tracking-wide">Hallmark Certified</h3>
             <p className="text-sm text-muted-foreground font-light">Guaranteed purity and authenticity in every grain of gold.</p>
           </div>
           <div className="flex flex-col items-center space-y-4 p-6 border border-white/5 hover:border-primary/20 transition-colors duration-500">
-            <Leaf className="text-primary w-8 h-8 mb-2" strokeWidth={1} />
+            <Leaf className="text-heading w-8 h-8 mb-2" strokeWidth={1} />
             <h3 className="font-serif text-xl text-heading tracking-wide">Ethically Sourced</h3>
             <p className="text-sm text-muted-foreground font-light">Responsible mining and sustainable practices at our core.</p>
           </div>
           <div className="flex flex-col items-center space-y-4 p-6 border border-white/5 hover:border-primary/20 transition-colors duration-500">
-            <Crown className="text-primary w-8 h-8 mb-2" strokeWidth={1} />
+            <Crown className="text-heading w-8 h-8 mb-2" strokeWidth={1} />
             <h3 className="font-serif text-xl text-heading tracking-wide">Handcrafted Excellence</h3>
             <p className="text-sm text-muted-foreground font-light">Master artisans creating heirlooms for generations to come.</p>
           </div>

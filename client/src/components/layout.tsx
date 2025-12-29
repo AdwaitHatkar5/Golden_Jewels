@@ -25,7 +25,7 @@ export function Layout({ children }: { children: React.ReactNode }) {
           </div>
 
           {/* Icons (Right) */}
-          <div className="w-1/4 flex justify-end gap-6 text-primary">
+          <div className="w-1/4 flex justify-end gap-6 text-heading">
             <button className="hover:text-white transition-colors" data-testid="icon-search">
               <Search strokeWidth={1.5} size={20} />
             </button>
@@ -59,10 +59,10 @@ export function Layout({ children }: { children: React.ReactNode }) {
             <div className="space-y-4 flex flex-col items-center">
               <h4 className="font-serif text-xl text-heading tracking-widest">Svarnikaa</h4>
               <div className="flex gap-6 mt-2">
-                <a href="#" className="text-muted-foreground hover:text-primary transition-colors"><Instagram strokeWidth={1} size={20}/></a>
-                <a href="#" className="text-muted-foreground hover:text-primary transition-colors"><Facebook strokeWidth={1} size={20}/></a>
-                <a href="#" className="text-muted-foreground hover:text-primary transition-colors"><Twitter strokeWidth={1} size={20}/></a>
-                <a href="#" className="text-muted-foreground hover:text-primary transition-colors"><Mail strokeWidth={1} size={20}/></a>
+                <a href="#" className="text-muted-foreground hover:text-heading transition-colors"><Instagram strokeWidth={1} size={20}/></a>
+                <a href="#" className="text-muted-foreground hover:text-heading transition-colors"><Facebook strokeWidth={1} size={20}/></a>
+                <a href="#" className="text-muted-foreground hover:text-heading transition-colors"><Twitter strokeWidth={1} size={20}/></a>
+                <a href="#" className="text-muted-foreground hover:text-heading transition-colors"><Mail strokeWidth={1} size={20}/></a>
               </div>
             </div>
 
