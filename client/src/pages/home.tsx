@@ -106,7 +106,7 @@ export default function Home() {
             transition={{ duration: 1, delay: 0.8 }}
             className="pt-8"
           >
-            <button className="px-8 py-3 border border-primary/50 text-primary hover:bg-primary hover:text-background transition-all duration-500 uppercase text-xs tracking-[0.2em]">
+            <button className="px-8 py-3 bg-primary text-background hover:bg-primary/80 transition-all duration-500 uppercase text-xs tracking-[0.2em] font-medium">
               View Collection
             </button>
           </motion.div>
