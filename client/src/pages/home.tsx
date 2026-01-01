@@ -7,7 +7,12 @@ import { useRef, useState, useEffect } from "react";
 import useEmblaCarousel from "embla-carousel-react";
 
 function ProductCarousel() {
-  const [emblaRef, emblaApi] = useEmblaCarousel({ loop: true, align: "start" });
+  const [emblaRef, emblaApi] = useEmblaCarousel({ 
+    loop: true, 
+    align: "start",
+    dragFree: true,
+    containScroll: "trimSnaps"
+  });
   const [canScrollPrev, setCanScrollPrev] = useState(false);
   const [canScrollNext, setCanScrollNext] = useState(true);
 
@@ -60,9 +65,9 @@ function ProductCarousel() {
       </div>
       
       <div className="overflow-hidden" ref={emblaRef}>
-        <div className="flex gap-6">
+        <div className="flex gap-10 lg:gap-16">
           {products.map((product) => (
-            <div key={product.id} className="flex-[0_0_100%] md:flex-[0_0_50%] lg:flex-[0_0_25%] min-w-0">
+            <div key={product.id} className="flex-[0_0_85%] md:flex-[0_0_45%] lg:flex-[0_0_28%] min-w-0">
               <ProductCard product={product} />
             </div>
           ))}

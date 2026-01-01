@@ -63,8 +63,8 @@
   --popover-foreground: 45 30% 90%;
 
   /* Royal Blue for Accents & Buttons */
-  --primary: 217 91% 58%; /* #4169E1 Royal Blue */
-  --primary-foreground: 46 80% 10%; /* Dark text on blue */
+  --primary: 45 60% 60%; /* #4169E1 Royal Blue */
+  --primary-foreground: 45 60% 60%; /* Dark text on blue */
 
   /* Gold for Headings */
   --heading: 45 60% 60%; /* #D4AF37 Gold */
@@ -75,7 +75,7 @@
   --muted: 46 30% 20%;
   --muted-foreground: 45 20% 60%;
 
-  --accent: 217 91% 58%; /* Royal Blue */
+  --accent: 45 60% 60%; /* Royal Blue */
   --accent-foreground: 46 80% 10%;
 
   --destructive: 0 62.8% 30.6%;
