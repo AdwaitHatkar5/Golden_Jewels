@@ -49,10 +49,6 @@ export function ProductCard({ product }: ProductCardProps) {
           "{product.description}"
         </p>
       </div>
-
-      <button className="text-[10px] font-bold tracking-[0.3em] uppercase text-primary border-b border-primary/30 pb-1 hover:text-white hover:border-white transition-all flex items-center gap-2 opacity-60 group-hover:opacity-100">
-        Product Details <ArrowUpRight size={12} />
-      </button>
     </motion.div>
   );
 }
