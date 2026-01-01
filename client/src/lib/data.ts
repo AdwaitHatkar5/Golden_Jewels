@@ -18,6 +18,8 @@ export const products = [
     name: "Royal Kundan Choker",
     metal: "22K Gold",
     weight: "48g",
+    price: "₹1,45,000",
+    description: "Handcrafted antique finish with semi-precious stones.",
     image: chokerImage,
   },
   {
@@ -25,6 +27,8 @@ export const products = [
     name: "Diamond Drop Earrings",
     metal: "18K Gold & Diamonds",
     weight: "12g",
+    price: "₹85,000",
+    description: "Brilliant cut diamonds in a classic drop design.",
     image: earringsImage,
   },
   {
@@ -32,6 +36,8 @@ export const products = [
     name: "Heritage Filigree Bangle",
     metal: "22K Gold",
     weight: "35g",
+    price: "₹1,10,000",
+    description: "Intricate filigree work inspired by Royal Rajasthani art.",
     image: bangleImage,
   },
   {
@@ -39,6 +45,8 @@ export const products = [
     name: "Temple Coin Necklace",
     metal: "24K Gold",
     weight: "52g",
+    price: "₹1,95,000",
+    description: "Traditional temple jewelry featuring sacred coin motifs.",
     image: heroImage,
   },
   {
@@ -46,6 +54,8 @@ export const products = [
     name: "Sapphire Statement Ring",
     metal: "18K Gold & Sapphire",
     weight: "8g",
+    price: "₹65,000",
+    description: "Deep royal blue sapphire set in polished gold.",
     image: ringImage,
   },
   {
@@ -53,6 +63,8 @@ export const products = [
     name: "Vintage Gold Locket",
     metal: "22K Gold",
     weight: "18g",
+    price: "₹42,000",
+    description: "A timeless keepsake with hand-engraved floral patterns.",
     image: pendantImage,
   },
   {
@@ -60,6 +72,8 @@ export const products = [
     name: "Traditional Bell Anklet",
     metal: "22K Gold",
     weight: "42g",
+    price: "₹92,000",
+    description: "Delicate craftsmanship with functional melodic bells.",
     image: ankletImage,
   },
   {
@@ -67,6 +81,8 @@ export const products = [
     name: "Grandmother's Legacy",
     metal: "24K Gold",
     weight: "65g",
+    price: "₹2,25,000",
+    description: "Heavy heritage piece passed down through generations.",
     image: chokerImage,
   },
 ];
