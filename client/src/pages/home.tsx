@@ -9,7 +9,7 @@ export default function Home() {
     <Layout>
       {/* Hero Section */}
       <section className="relative h-screen w-full overflow-hidden flex items-center justify-center snap-start">
-        <div className="absolute inset-0 z-0 flex items-center justify-center p-12 md:p-24 lg:p-32">
+        <div className="absolute inset-0 z-0 flex items-center justify-center p-4 md:p-8 lg:p-12">
           <img 
             src={assets.hero} 
             alt="Luxury Jewelry" 
@@ -24,7 +24,7 @@ export default function Home() {
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 1.5, ease: [0.22, 1, 0.36, 1] }}
           >
-            <h1 className="font-serif text-6xl md:text-8xl lg:text-9xl text-heading font-medium tracking-tighter leading-none mb-4">
+            <h1 className="font-serif text-6xl md:text-8xl lg:text-9xl text-[#8B0000] font-medium tracking-tighter leading-none mb-4">
               Svarnikaa
             </h1>
             <p className="font-serif text-xl md:text-2xl tracking-[0.4em] uppercase text-primary font-bold">
