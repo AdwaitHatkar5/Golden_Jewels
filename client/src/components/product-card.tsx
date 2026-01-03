@@ -71,9 +71,12 @@ export function ProductCard({ product }: ProductCardProps) {
         >
           <button 
             onClick={() => setShowQR(true)}
-            className="px-12 py-4 bg-primary text-primary-foreground font-serif tracking-[0.2em] uppercase text-sm hover:bg-primary/90 transition-all duration-300 rounded-full flex items-center gap-3 group"
+            className="group flex items-center gap-4 text-heading hover:text-primary transition-colors duration-300"
           >
-            Order <ArrowUpRight size={18} className="group-hover:translate-x-1 group-hover:-translate-y-1 transition-transform" />
+            <span className="font-serif tracking-[0.3em] uppercase text-sm">Order</span>
+            <div className="w-12 h-12 rounded-full border border-white/10 flex items-center justify-center bg-[#1a1608] group-hover:bg-primary group-hover:text-primary-foreground transition-all duration-500">
+              <ArrowUpRight size={20} className="group-hover:translate-x-0.5 group-hover:-translate-y-0.5 transition-transform" />
+            </div>
           </button>
         </motion.div>
       </div>
