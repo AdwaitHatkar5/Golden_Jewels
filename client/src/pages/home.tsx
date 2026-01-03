@@ -16,7 +16,7 @@ export default function Home() {
             <img 
               src={pendantNecklace} 
               alt="Luxury Jewelry Background" 
-              className="w-full h-full object-cover opacity-100 scale-[0.9]"
+              className="w-full h-full object-cover opacity-100 scale-[0.9] blur-[2px]"
             />
             {/* Soft vignette/blur on edges */}
             <div className="absolute inset-0 shadow-[inset_0_0_100px_rgba(26,22,8,1)] pointer-events-none" />
@@ -24,7 +24,7 @@ export default function Home() {
           <div className="absolute inset-0 bg-gradient-to-t from-background via-transparent to-background" />
         </div>
 
-        <div className="relative z-10 text-center space-y-6 max-w-3xl px-6">
+        <div className="relative z-10 text-center space-y-6 max-w-3xl px-6 -translate-y-[15px]">
           <motion.div
             initial={{ opacity: 0, y: 30 }}
             animate={{ opacity: 1, y: 0 }}

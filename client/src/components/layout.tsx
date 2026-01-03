@@ -1,6 +1,6 @@
 import { Link } from "wouter";
 import { Heart, Search, ShoppingBag, Instagram, Facebook, Twitter, Mail } from "lucide-react";
-import logoImg from "@assets/logo1_1767434759442.png";
+import logoImg from "@assets/logo1_1767435040766.png";
 
 export function Layout({ children }: { children: React.ReactNode }) {
   return (
