@@ -1,6 +1,7 @@
 import { motion, AnimatePresence } from "framer-motion";
-import { ArrowUpRight, ShoppingCart, X } from "lucide-react";
+import { ArrowUpRight, ShoppingCart, X, QrCode } from "lucide-react";
 import { useState } from "react";
+import qrPlaceholder from "@assets/stock_images/luxury_gold_qr_code__badcc23b.jpg";
 
 interface ProductCardProps {
   product: {
@@ -15,6 +16,8 @@ interface ProductCardProps {
 }
 
 export function ProductCard({ product }: ProductCardProps) {
+  const [showQR, setShowQR] = useState(false);
+
   return (
     <motion.div 
       initial={{ opacity: 0 }}
@@ -61,12 +64,58 @@ export function ProductCard({ product }: ProductCardProps) {
         </motion.p>
 
         <motion.div 
-          initial={{ width: 0 }}
-          whileInView={{ width: "100px" }}
-          transition={{ duration: 1.5, delay: 1 }}
-          className="h-[1px] bg-primary/30 mx-auto mt-12"
-        />
+          initial={{ opacity: 0, y: 20 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{ duration: 1, delay: 1 }}
+          className="flex flex-col items-center gap-6 mt-12"
+        >
+          <button 
+            onClick={() => setShowQR(true)}
+            className="px-12 py-4 bg-primary text-primary-foreground font-serif tracking-[0.2em] uppercase text-sm hover:bg-primary/90 transition-all duration-300 rounded-full flex items-center gap-3 group"
+          >
+            Order <ArrowUpRight size={18} className="group-hover:translate-x-1 group-hover:-translate-y-1 transition-transform" />
+          </button>
+        </motion.div>
       </div>
+
+      <AnimatePresence>
+        {showQR && (
+          <motion.div 
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            exit={{ opacity: 0 }}
+            className="fixed inset-0 z-[100] flex items-center justify-center bg-background/95 backdrop-blur-xl p-6"
+          >
+            <button 
+              onClick={() => setShowQR(false)}
+              className="absolute top-10 right-10 text-heading hover:rotate-90 transition-transform duration-500"
+            >
+              <X size={32} strokeWidth={1} />
+            </button>
+            <motion.div 
+              initial={{ scale: 0.9, opacity: 0 }}
+              animate={{ scale: 1, opacity: 1 }}
+              exit={{ scale: 0.9, opacity: 0 }}
+              className="bg-card p-12 border border-white/10 rounded-3xl max-w-sm w-full text-center space-y-8 shadow-2xl"
+            >
+              <div className="space-y-2">
+                <h3 className="font-serif text-3xl text-heading">Scan to Order</h3>
+                <p className="text-muted-foreground text-sm font-light">Experience the royale concierge service</p>
+              </div>
+              <div className="relative aspect-square w-full bg-white p-6 rounded-2xl flex items-center justify-center group overflow-hidden">
+                <img 
+                  src={qrPlaceholder} 
+                  alt="Order QR Code" 
+                  className="w-full h-full object-contain"
+                />
+              </div>
+              <div className="pt-4">
+                <p className="text-[10px] text-primary uppercase tracking-[0.3em] font-bold">Svarnikaa Royale Concierge</p>
+              </div>
+            </motion.div>
+          </motion.div>
+        )}
+      </AnimatePresence>
     </motion.div>
   );
 }

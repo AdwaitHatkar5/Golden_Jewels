@@ -36,12 +36,6 @@ export function Layout({ children }: { children: React.ReactNode }) {
             <button className="hover:text-white transition-colors" data-testid="icon-search">
               <Search strokeWidth={1.5} size={20} />
             </button>
-            <button className="hidden md:block hover:text-white transition-colors" data-testid="icon-wishlist">
-              <Heart strokeWidth={1.5} size={20} />
-            </button>
-            <button className="hover:text-white transition-colors" data-testid="icon-cart">
-              <ShoppingBag strokeWidth={1.5} size={20} />
-            </button>
           </div>
         </div>
       </header>
