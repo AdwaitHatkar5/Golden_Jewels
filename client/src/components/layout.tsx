@@ -1,5 +1,6 @@
 import { Link } from "wouter";
 import { Heart, Search, ShoppingBag, Instagram, Facebook, Twitter, Mail } from "lucide-react";
+import logoImg from "@assets/logo1_1767434759442.png";
 
 export function Layout({ children }: { children: React.ReactNode }) {
   return (
@@ -19,15 +20,11 @@ export function Layout({ children }: { children: React.ReactNode }) {
           <div className="w-2/4 flex justify-center">
             <Link href="/">
               <a className="group relative flex items-center justify-center transition-all duration-500" data-testid="link-home">
-                <div className="relative w-16 h-16 flex items-center justify-center">
+                <div className="relative w-16 h-16 flex items-center justify-center overflow-hidden rounded-lg">
                   <img 
-                    src="/assets/images/logo.png" 
-                    alt="Logo" 
-                    className="w-full h-full object-contain"
-                    onError={(e) => {
-                      const target = e.target as HTMLImageElement;
-                      target.src = "https://placehold.co/100x100/1a1608/D4AF37?text=LOGO";
-                    }}
+                    src={logoImg} 
+                    alt="Svarnikaa Logo" 
+                    className="w-full h-full object-cover scale-110"
                   />
                 </div>
               </a>
