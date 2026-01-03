@@ -5,7 +5,7 @@ export function Layout({ children }: { children: React.ReactNode }) {
   return (
     <div className="min-h-screen bg-background text-foreground font-sans selection:bg-primary selection:text-primary-foreground">
       {/* Header */}
-      <header className="fixed top-0 left-0 right-0 z-50 bg-background/80 backdrop-blur-md border-b border-white/5 transition-all duration-300">
+      <header className="fixed top-0 left-0 right-0 z-50 bg-background border-b border-white/5 transition-all duration-300">
         <div className="container mx-auto px-6 h-20 flex items-center justify-between">
           {/* Mobile Menu Placeholder (Left) */}
           <div className="w-1/4 md:hidden">
