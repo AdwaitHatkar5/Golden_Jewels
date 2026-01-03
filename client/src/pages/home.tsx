@@ -4,6 +4,8 @@ import { assets, products } from "@/lib/data";
 import { motion } from "framer-motion";
 import { ShieldCheck, Leaf, Crown } from "lucide-react";
 
+import smallNecklace from "@assets/generated_images/small_dainty_gold_necklace.png";
+
 export default function Home() {
   return (
     <Layout>
@@ -27,17 +29,23 @@ export default function Home() {
             <h1 className="font-serif text-6xl md:text-8xl lg:text-9xl text-heading font-medium tracking-tighter leading-none mb-4">
               Svarnikaa
             </h1>
-            <p className="font-sans text-xs md:text-sm tracking-[0.5em] uppercase text-primary/80 font-light">
-              Exclusivity Redefined.
+            <p className="font-sans text-xs md:text-sm tracking-[0.5em] uppercase text-primary font-bold">
+              Exclusively Royale.
             </p>
           </motion.div>
           
           <motion.div
-            initial={{ height: 0 }}
-            animate={{ height: "100px" }}
-            transition={{ duration: 2, delay: 1 }}
-            className="w-[1px] bg-gradient-to-b from-primary to-transparent mx-auto mt-12"
-          />
+            initial={{ opacity: 0, scale: 0.8 }}
+            animate={{ opacity: 1, scale: 1 }}
+            transition={{ duration: 1.5, delay: 0.5 }}
+            className="mt-8 mb-4 flex justify-center"
+          >
+            <img 
+              src={smallNecklace} 
+              alt="Curated Piece" 
+              className="w-24 h-24 object-contain brightness-110 drop-shadow-[0_0_15px_rgba(212,175,55,0.3)]"
+            />
+          </motion.div>
         </div>
       </section>
 
