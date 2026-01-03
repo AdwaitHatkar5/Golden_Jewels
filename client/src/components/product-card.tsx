@@ -23,11 +23,12 @@ export function ProductCard({ product }: ProductCardProps) {
       transition={{ duration: 1.5, ease: [0.22, 1, 0.36, 1] }}
       className="relative w-full h-screen flex flex-col items-center justify-center text-center px-6"
     >
-      <div className="absolute inset-0 z-0 flex items-center justify-center p-4 md:p-8 lg:p-12">
+      <div className="absolute inset-0 z-0">
+        <div className="absolute inset-0 bg-gradient-to-b from-background via-transparent to-background z-10" />
         <img 
           src={product.image} 
           alt={product.name}
-          className="w-full h-full object-contain opacity-60 scale-100"
+          className="w-full h-full object-cover opacity-40 scale-105"
         />
       </div>
 
@@ -45,7 +46,7 @@ export function ProductCard({ product }: ProductCardProps) {
           initial={{ opacity: 0, scale: 0.95 }}
           whileInView={{ opacity: 1, scale: 1 }}
           transition={{ duration: 1.5, delay: 0.2 }}
-          className="font-serif text-5xl md:text-8xl text-[#8B0000] tracking-tight leading-none"
+          className="font-serif text-5xl md:text-8xl text-heading tracking-tight leading-none"
         >
           {product.name}
         </motion.h2>
