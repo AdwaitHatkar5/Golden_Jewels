@@ -18,8 +18,17 @@ export function Layout({ children }: { children: React.ReactNode }) {
           {/* Logo (Center) */}
           <div className="w-2/4 flex justify-center">
             <Link href="/">
-              <a className="font-serif text-3xl md:text-4xl tracking-widest font-bold text-heading hover:text-heading/90 transition-colors uppercase">
-                Svarnikaa
+              <a className="group relative flex items-center justify-center p-2 border-2 border-primary/60 rounded-full transition-all duration-500 hover:border-primary" data-testid="link-home">
+                <div className="relative w-12 h-12 flex items-center justify-center">
+                  {/* Custom SVG Lotus with 5 petals */}
+                  <svg viewBox="0 0 100 100" className="w-full h-full fill-primary transition-transform duration-500 group-hover:scale-110">
+                    <path d="M50 20 C60 35 75 45 50 80 C25 45 40 35 50 20 Z" /> {/* Center Petal */}
+                    <path d="M50 80 C65 65 85 55 90 35 C80 25 65 30 50 80 Z" /> {/* Right Outer */}
+                    <path d="M50 80 C35 65 15 55 10 35 C20 25 35 30 50 80 Z" /> {/* Left Outer */}
+                    <path d="M50 80 C60 70 80 65 80 45 C70 40 60 45 50 80 Z" /> {/* Right Inner */}
+                    <path d="M50 80 C40 70 20 65 20 45 C30 40 40 45 50 80 Z" /> {/* Left Inner */}
+                  </svg>
+                </div>
               </a>
             </Link>
           </div>

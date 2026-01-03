@@ -15,7 +15,7 @@ export default function Home() {
           <img 
             src={smallNecklace} 
             alt="Luxury Jewelry Background" 
-            className="w-1/2 h-1/2 object-contain opacity-20 blur-sm scale-150"
+            className="w-1/2 h-1/2 object-contain opacity-30 blur-[4px] scale-150"
           />
           <div className="absolute inset-0 bg-gradient-to-t from-background via-transparent to-background" />
         </div>
@@ -26,7 +26,7 @@ export default function Home() {
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 1.5, ease: [0.22, 1, 0.36, 1] }}
           >
-            <h1 className="font-serif text-6xl md:text-8xl lg:text-9xl text-heading font-medium tracking-tighter leading-none mb-4">
+            <h1 className="font-sans text-5xl md:text-7xl lg:text-8xl text-heading font-bold tracking-[0.2em] leading-none mb-6 uppercase">
               Svarnikaa
             </h1>
             <p className="font-sans text-xs md:text-sm tracking-[0.5em] uppercase text-primary font-bold">
