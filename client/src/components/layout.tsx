@@ -40,7 +40,7 @@ export function Layout({ children }: { children: React.ReactNode }) {
       </header>
 
       {/* Main Content */}
-      <main className="pt-20">
+      <main className="relative">
         {children}
       </main>
 
