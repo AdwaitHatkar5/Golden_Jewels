@@ -9,11 +9,11 @@ export default function Home() {
     <Layout>
       {/* Hero Section */}
       <section className="relative h-screen w-full overflow-hidden flex items-center justify-center snap-start">
-        <div className="absolute inset-0 z-0">
+        <div className="absolute inset-0 z-0 flex items-center justify-center p-12 md:p-24 lg:p-32">
           <img 
             src={assets.hero} 
             alt="Luxury Jewelry" 
-            className="w-full h-full object-cover opacity-60"
+            className="w-full h-full object-contain opacity-80"
           />
           <div className="absolute inset-0 bg-gradient-to-t from-background via-transparent to-background" />
         </div>

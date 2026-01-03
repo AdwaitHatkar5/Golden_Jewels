@@ -23,12 +23,11 @@ export function ProductCard({ product }: ProductCardProps) {
       transition={{ duration: 1.5, ease: [0.22, 1, 0.36, 1] }}
       className="relative w-full h-screen flex flex-col items-center justify-center text-center px-6"
     >
-      <div className="absolute inset-0 z-0">
-        <div className="absolute inset-0 bg-gradient-to-b from-background via-transparent to-background z-10" />
+      <div className="absolute inset-0 z-0 flex items-center justify-center p-12 md:p-24 lg:p-32">
         <img 
           src={product.image} 
           alt={product.name}
-          className="w-full h-full object-cover opacity-40 scale-105"
+          className="w-full h-full object-contain opacity-60 scale-100"
         />
       </div>
 
