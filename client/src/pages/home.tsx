@@ -11,11 +11,11 @@ export default function Home() {
     <Layout>
       {/* Hero Section */}
       <section className="relative h-screen w-full overflow-hidden flex items-center justify-center snap-start">
-        <div className="absolute inset-0 z-0">
+        <div className="absolute inset-0 z-0 flex items-center justify-center overflow-hidden">
           <img 
-            src={assets.hero} 
-            alt="Luxury Jewelry" 
-            className="w-full h-full object-cover opacity-60"
+            src={smallNecklace} 
+            alt="Luxury Jewelry Background" 
+            className="w-1/2 h-1/2 object-contain opacity-20 blur-sm scale-150"
           />
           <div className="absolute inset-0 bg-gradient-to-t from-background via-transparent to-background" />
         </div>
@@ -32,19 +32,6 @@ export default function Home() {
             <p className="font-sans text-xs md:text-sm tracking-[0.5em] uppercase text-primary font-bold">
               Exclusively Royale.
             </p>
-          </motion.div>
-          
-          <motion.div
-            initial={{ opacity: 0, scale: 0.8 }}
-            animate={{ opacity: 1, scale: 1 }}
-            transition={{ duration: 1.5, delay: 0.5 }}
-            className="mt-8 mb-4 flex justify-center"
-          >
-            <img 
-              src={smallNecklace} 
-              alt="Curated Piece" 
-              className="w-24 h-24 object-contain brightness-110 drop-shadow-[0_0_15px_rgba(212,175,55,0.3)]"
-            />
           </motion.div>
         </div>
       </section>
