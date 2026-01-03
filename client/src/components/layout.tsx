@@ -24,7 +24,7 @@ export function Layout({ children }: { children: React.ReactNode }) {
                   <img 
                     src={logoImg} 
                     alt="Svarnikaa Logo" 
-                    className="w-full h-full object-cover scale-110"
+                    className="w-full h-full object-cover scale-110 [mask-image:radial-gradient(circle,black_70%,transparent_100%)]"
                   />
                 </div>
               </a>
