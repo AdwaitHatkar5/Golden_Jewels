@@ -19,7 +19,10 @@ export function Layout({ children }: { children: React.ReactNode }) {
           {/* Logo (Center) */}
           <div className="w-2/4 flex justify-center">
             <Link href="/">
-              <a className="group relative flex items-center justify-center transition-all duration-500" data-testid="link-home">
+              <div 
+                className="group relative flex items-center justify-center transition-all duration-500 cursor-pointer" 
+                data-testid="link-home"
+              >
                 <div className="relative w-16 h-16 flex items-center justify-center overflow-hidden rounded-lg">
                   <img 
                     src={logoImg} 
@@ -27,7 +30,7 @@ export function Layout({ children }: { children: React.ReactNode }) {
                     className="w-full h-full object-cover scale-110 [mask-image:radial-gradient(circle,black_70%,transparent_100%)]"
                   />
                 </div>
-              </a>
+              </div>
             </Link>
           </div>
 
