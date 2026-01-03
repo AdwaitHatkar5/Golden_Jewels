@@ -12,11 +12,15 @@ export default function Home() {
       {/* Hero Section */}
       <section className="relative h-screen w-full overflow-hidden flex items-center justify-center snap-start">
         <div className="absolute inset-0 z-0 flex items-center justify-center overflow-hidden">
-          <img 
-            src={pendantNecklace} 
-            alt="Luxury Jewelry Background" 
-            className="w-1/2 h-1/2 object-contain opacity-100 scale-[1.6] blur-[0.5px]"
-          />
+          <div className="relative w-full h-full flex items-center justify-center">
+            <img 
+              src={pendantNecklace} 
+              alt="Luxury Jewelry Background" 
+              className="w-full h-full object-cover opacity-100 scale-[0.9]"
+            />
+            {/* Soft vignette/blur on edges */}
+            <div className="absolute inset-0 shadow-[inset_0_0_100px_rgba(26,22,8,1)] pointer-events-none" />
+          </div>
           <div className="absolute inset-0 bg-gradient-to-t from-background via-transparent to-background" />
         </div>
 
