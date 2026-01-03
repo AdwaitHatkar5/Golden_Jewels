@@ -15,7 +15,7 @@ export default function Home() {
           <img 
             src={pendantNecklace} 
             alt="Luxury Jewelry Background" 
-            className="w-1/2 h-1/2 object-contain opacity-100 scale-[1.6] blur-[2px]"
+            className="w-1/2 h-1/2 object-contain opacity-100 scale-[1.6] blur-[0.5px]"
           />
           <div className="absolute inset-0 bg-gradient-to-t from-background via-transparent to-background" />
         </div>
