@@ -4,7 +4,7 @@ import { assets, products } from "@/lib/data";
 import { motion } from "framer-motion";
 import { ShieldCheck, Leaf, Crown } from "lucide-react";
 
-import smallNecklace from "@assets/generated_images/small_dainty_gold_necklace.png";
+import pendantNecklace from "@assets/generated_images/small_diamond_emerald_pendant_necklace.png";
 
 export default function Home() {
   return (
@@ -13,9 +13,9 @@ export default function Home() {
       <section className="relative h-screen w-full overflow-hidden flex items-center justify-center snap-start">
         <div className="absolute inset-0 z-0 flex items-center justify-center overflow-hidden">
           <img 
-            src={smallNecklace} 
+            src={pendantNecklace} 
             alt="Luxury Jewelry Background" 
-            className="w-1/2 h-1/2 object-contain opacity-100 scale-150"
+            className="w-1/2 h-1/2 object-contain opacity-100 scale-[1.6] blur-[2px]"
           />
           <div className="absolute inset-0 bg-gradient-to-t from-background via-transparent to-background" />
         </div>
