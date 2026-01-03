@@ -16,10 +16,22 @@ export function Layout({ children }: { children: React.ReactNode }) {
           <div className="hidden md:block w-1/4"></div>
 
           {/* Logo (Center) */}
-          <div className="w-2/4 flex justify-center">
+          <div className="w-2/4 flex flex-col items-center">
             <Link href="/">
-              <a className="font-serif text-3xl md:text-4xl tracking-widest font-bold text-heading hover:text-heading/90 transition-colors uppercase">
-                Svarnikaa
+              <a className="flex flex-col items-center group">
+                <div className="w-12 h-12 mb-1 relative flex items-center justify-center">
+                  {/* Custom Lotus Logo with 5 petals and thick golden borders */}
+                  <svg viewBox="0 0 100 100" className="w-full h-full text-heading">
+                    <path d="M50 20 C60 35 70 50 50 80 C30 50 40 35 50 20" fill="none" stroke="currentColor" strokeWidth="4" />
+                    <path d="M50 80 C70 70 85 55 85 35 C85 55 70 75 50 80" fill="none" stroke="currentColor" strokeWidth="4" />
+                    <path d="M50 80 C30 70 15 55 15 35 C15 55 30 75 50 80" fill="none" stroke="currentColor" strokeWidth="4" />
+                    <path d="M50 80 C80 85 95 75 95 55 C95 75 80 85 50 80" fill="none" stroke="currentColor" strokeWidth="4" />
+                    <path d="M50 80 C20 85 5 75 5 55 C5 75 20 85 50 80" fill="none" stroke="currentColor" strokeWidth="4" />
+                  </svg>
+                </div>
+                <span className="font-serif text-2xl tracking-[0.3em] font-bold text-heading uppercase">
+                  Svarnikaa
+                </span>
               </a>
             </Link>
           </div>

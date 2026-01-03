@@ -27,8 +27,8 @@ export default function Home() {
             <h1 className="font-serif text-6xl md:text-8xl lg:text-9xl text-heading font-medium tracking-tighter leading-none mb-4">
               Svarnikaa
             </h1>
-            <p className="font-sans text-xs md:text-sm tracking-[0.5em] uppercase text-primary/80 font-light">
-              Exclusivity Redefined.
+            <p className="font-serif text-xl md:text-2xl tracking-[0.4em] uppercase text-primary font-bold">
+              Exclusively Royale
             </p>
           </motion.div>
           

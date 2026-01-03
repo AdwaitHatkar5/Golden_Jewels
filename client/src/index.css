@@ -39,7 +39,7 @@
   --color-input: hsl(var(--input));
   --color-ring: hsl(var(--ring));
   
-  --font-sans: 'Montserrat', sans-serif;
+  --font-sans: 'Cormorant Garamond', serif;
   --font-serif: 'Cormorant Garamond', serif;
   
   --radius: 0rem; /* Sharp edges for luxury feel */
